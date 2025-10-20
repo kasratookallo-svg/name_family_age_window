@@ -5,8 +5,8 @@ def name_validator(name):
     if not re.match(r"^[a-zA-Z\s]{3,30}$", name):
         raise ValueError("Invalid Name !!!")
 
-def family_validator(family):
-    if not re.match(r"^[a-zA-Z\s]{3,30}$", family):
+def id_validator(id_number):
+    if not re.match(r"^[\d\s]{3,30}$", family):
         raise ValueError("Invalid Family !!!")
 
 def age_validator(age):
