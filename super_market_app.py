@@ -1,4 +1,4 @@
-from module_name_age_kasra_tookallo import *
+from super_market_module import *
 import tkinter
 from tkinter import *
 
@@ -17,9 +17,9 @@ window = Tk()
 window.title("Name id price Window")
 window.geometry("600x400")
 
-label = Label(window, text="name: ").place(relx=20, rely=20)
-name =
-entry = Entry(window).place(relx=100, rely=40)
+Label = Label(window, text="name: ").place(relx=20, rely=20)
+name = StringVar()
+Entry = Entry(window, textvariable=name).place(relx=100, rely=40)
 
 label = Label(window, text="ID: ").place(relx=20, rely=60)
 entry = Entry(window).place(relx=100, rely=60)
