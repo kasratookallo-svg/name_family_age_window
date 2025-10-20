@@ -7,8 +7,8 @@ def name_validator(name):
 
 def id_validator(id_number):
     if not re.match(r"^[\d\s]{3,30}$", id_number):
-        raise ValueError("Invalid Family !!!")
+        raise ValueError("Invalid Id Number !!!")
 
 def price_validator(price):
     if not (type(price) == int and 0 < price < 150):
-        raise ValueError("Invalid Age !!!")
+        raise ValueError("Invalid price !!!")
