@@ -23,6 +23,11 @@ entry = Entry(window).place(relx=100, rely=40)
 
 label = Label(window, text="ID: ").place(relx=20, rely=60)
 entry = Entry(window).place(relx=100, rely=60)
+id_number =
 
 label = Label(window, text="price: ").place(relx=20, rely=100)
+price =
 entry = Entry(window).place(relx=100, rely=100)
+
+button = Button(window).place(relx=100, rely=200)
+window.mainloop()
