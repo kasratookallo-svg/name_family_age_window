@@ -74,6 +74,8 @@ Entry(window, textvariable=id_number).place(x=180, y=180)
 Label(window, text="Expire date.(yyyy/mm/dd)").place(x=40, y=220)
 expiration_date = StringVar()
 Entry(window, textvariable=expiration_date).place(x=180, y=220)
+
+#Buttons
 Button(window, text="Submit", command=save).place(x=180, y=300, width=70, height=60)
 Button(window, text="Total", command=total_price).place(x=280, y=300, width=70, height=60)
 
