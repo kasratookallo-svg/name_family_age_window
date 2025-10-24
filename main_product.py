@@ -3,9 +3,10 @@ from math import *
 from tkinter import *
 from tkinter import messagebox
 from module_product import *
-
-
 product_list = []
+
+#majmoo = 0
+
 
 
 def save():
