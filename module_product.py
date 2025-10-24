@@ -24,5 +24,3 @@ def expire_validator(expire_date):
     if not ( expire_date.get() > datetime.datetime.today().date() ):
         raise ValueError("Expiration date must be later than today.")
 
-def total_price():
-    total = price.get() * quantity.get()
