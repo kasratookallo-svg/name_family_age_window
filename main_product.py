@@ -1,12 +1,11 @@
-
+import tkinter
 from tkinter import *
 from tkinter import messagebox
-from module_product import *
+from module import *
 
 
 total_price = 0
 product_list = []
-
 
 
 def save():
@@ -16,12 +15,14 @@ def save():
         #price_validator(price.get())
         #name_validator(name.get())
         #brand_validator(brand.get())
+        #quantity_validator(quantity.get())
+        #expire_validator(expire_date.get())
 
         product = {"name":name.get() , "brand":brand.get() , "quantity":quantity.get(), "price":price.get() , "id_number":id_number.get() }
         product_list.append(product)
         print(product , "Product saved successfully.")
         messagebox.showinfo("Information Saved","Product saved successfully.")
-        id_number.set(0)
+        id_number.set("")
         name.set("")
         brand.set("")
         quantity.set(0)
@@ -51,9 +52,12 @@ quantity = IntVar()
 Entry(window, textvariable=quantity).place(x=180, y=140)
 #Identity Number
 Label(window, text="ID num.").place(x=40, y=180)
-id_number = IntVar()
+id_number = StringVar()
 Entry(window, textvariable=id_number).place(x=180, y=180)
-
+#Expire date
+Label(window, text="Expire date.(yyyy/mm/dd)").place(x=40, y=220)
+expiration_date = StringVar()
+Entry(window, textvariable=expiration_date).place(x=180, y=220)
 Button(window, text="Submit" , command=save).place(x=180, y=300 , width=70 , height=60)
 Button(window, text="Total" , command=total_price).place(x=280, y=300 , width=70 , height=60)
 
