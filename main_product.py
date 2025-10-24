@@ -36,7 +36,7 @@ def save():
         messagebox.showerror("Error", f"Something went wrong : {e}")
 
 
-#print(product_list)
+#total_price action
 def total_price():
     print("Total price is " , price.get() * quantity.get())
 # _________________________________________________________________________________________________
