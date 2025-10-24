@@ -10,8 +10,9 @@ product_list = []
 
 
 def save():
-# _____________________________________________________________________________________________________________________________
+
     try:
+# _____________________________________________________________________________________________________________________________
         # todo Validators does'nt work properly
         # id_validator(id_number.get())
         # price_validator(price.get())
@@ -42,9 +43,9 @@ def total_price():
 # _________________________________________________________________________________________________
 # def total_price():
 
-# for product in product_list:
-# majmoo = majmoo + product['quantity'] * product['price']
-# print("total price is ", majmoo)
+#     for product in product_list:
+#         majmoo = majmoo + product['quantity'] * product['price']
+#     print("total price is ", majmoo)
 # _________________________________________________________________________________________________
 window = Tk()
 window.geometry("600x400")
