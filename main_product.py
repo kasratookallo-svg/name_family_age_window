@@ -23,7 +23,7 @@ def save():
 # _________________________________________________________________________________________________________________________________________
 
         product = {"name": name.get(), "brand": brand.get(), "quantity": quantity.get(), "price": price.get(),
-                   "id_number": id_number.get()} #,"expire_date": expire_date.get() }
+                   "id_number": id_number.get()}
         product_list.append(product)
         print(product, "Product saved successfully.")
         messagebox.showinfo("Information Saved", "Product saved successfully.")
