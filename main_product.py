@@ -4,7 +4,7 @@ from tkinter import *
 from tkinter import messagebox
 from module_product import *
 
-majmoo = 0
+
 product_list = []
 
 
@@ -25,6 +25,7 @@ def save():
         product_list.append(product)
         print(product, "Product saved successfully.")
         messagebox.showinfo("Information Saved", "Product saved successfully.")
+        #majmoo = price.get() * quantity.get()
         id_number.set("")
         name.set("")
         brand.set("")
@@ -34,13 +35,15 @@ def save():
         messagebox.showerror("Error", f"Something went wrong : {e}")
 
 
-print(product_list)
-# _________________________________________________________________________________________________
+#print(product_list)
 def total_price():
-    for product in product_list:
-        majmoo = price.get() * quantity.get()
+    print("Total price is " , price.get() * quantity.get())
+# _________________________________________________________________________________________________
+# def total_price():
+
+# for product in product_list:
 # majmoo = majmoo + product['quantity'] * product['price']
-    print("total price is ", majmoo)
+# print("total price is ", majmoo)
 # _________________________________________________________________________________________________
 window = Tk()
 window.geometry("600x400")
