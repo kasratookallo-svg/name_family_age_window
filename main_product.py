@@ -13,7 +13,7 @@ def save():
 
     try:
 # _____________________________________________________________________________________________________________________________
-        # todo Validators does'nt work properly
+        # todo Validators do'nt work properly
         # id_validator(id_number.get())
         # price_validator(price.get())
         # name_validator(name.get())
