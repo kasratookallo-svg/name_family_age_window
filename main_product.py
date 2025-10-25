@@ -38,15 +38,12 @@ def save():
 
 
 #total_price action
-def total_price():
-    print("Total price is " , price.get() * quantity.get())
-# _________________________________________________________________________________________________
-# def total_price():
 
-#     for product in product_list:
-#         majmoo = majmoo + product['quantity'] * product['price']
-#     print("total price is ", majmoo)
-# _________________________________________________________________________________________________
+def total_price():
+    for product in product_list:
+        majmoo = majmoo + product['quantity'] * product['price']
+    print("total price is ", majmoo)
+
 window = Tk()
 window.geometry("600x400")
 window.title("Product Management")
