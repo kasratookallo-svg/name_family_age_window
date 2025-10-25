@@ -5,7 +5,7 @@ from tkinter import messagebox
 from module_product import *
 product_list = []
 
-#majmoo = 0
+majmoo = 0
 
 
 
