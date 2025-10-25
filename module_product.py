@@ -21,6 +21,6 @@ def quantity_validator(quantity):
     if not (type(quantity) == int):
         raise ValueError("Quantity must be a positive number")
 def expire_validator(expire_date):
-    if not ( expire_date.get() > datetime.datetime.today().date() ):
-        raise ValueError("Expiration date must be later than today.")
+    if not re.match(r"[0-9]{4}/[0-9]{2}/[0-9]{2}", expire_date):
+        raise ValueError("Expiration date must be YYYY/MM/DD.")
 
