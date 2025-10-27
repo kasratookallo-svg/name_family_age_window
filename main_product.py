@@ -26,7 +26,6 @@ def save():
             "expire_date": expire_date}
 
         product_list.append(product)
-        print(product, "Product saved successfully.")
         messagebox.showinfo("Information Saved", "Product saved successfully.")
         id_number.set(0)
         name.set("")
