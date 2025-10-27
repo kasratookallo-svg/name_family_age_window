@@ -40,5 +40,6 @@ def quantity_validator(quantity):
 
 
 def expire_validator(expire_date):
-    if type(expire_date) != date and expire_date >= date.today():
+    if not type(expire_date) != date and expire_date >= date.today():
         raise ValueError("Expiration date must be YYYY-MM-DD.")
+
