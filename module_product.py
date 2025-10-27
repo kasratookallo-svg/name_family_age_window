@@ -19,10 +19,10 @@ def brand_validator(brand):
 
 
 def id_validator(id_number):
-    if type(id_number) == int and id_number > 0:
+    if type(id_number) == int and 999999999<id_number<10000000000 :
         return id_number
     else:
-        raise ValueError("Invalid Id Number !!!")
+        raise ValueError("Id Number must contain ten digits!!!")
 
 
 def price_validator(price):
@@ -41,4 +41,4 @@ def quantity_validator(quantity):
 
 def expire_validator(expire_date):
     if type(expire_date) != date and expire_date >= date.today():
-        raise ValueError("Expiration date must be YYYY/MM/DD.")
+        raise ValueError("Expiration date must be YYYY-MM-DD.")
