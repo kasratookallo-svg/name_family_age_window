@@ -40,11 +40,14 @@ def save():
 
 # total_price action
 def total_price():
-    total = 0
+    if not product_list:
+        messagebox.showerror("No product", "There is no products saved.")
+        return
 
+    total = 0
     for product in product_list:
         total = total + product['quantity'] * product['price']
-    messagebox.showinfo("Total Price", f"Total : {total}")
+    messagebox.showinfo("Total Price", f"Total value of all products: {total}")
 
 
 
